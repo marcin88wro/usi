@@ -11,7 +11,7 @@ class Doctor extends Model{
         return $this->belongsTo('App\Speciality', 'SPECIALITY_id');
     }
     
-    public function appointmnts(){
+    public function appointments(){
         return $this->hasMany('App\Appointment', 'DOCTOR_id');
     }
 }
